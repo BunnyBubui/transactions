@@ -1,0 +1,252 @@
+@import url('https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Serif+Thai:wght@100..900&display=swap');
+
+.cover {
+  background-color: rgb(166, 169, 230);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  text-align: center;
+  animation: move 3s ease-in-out;
+}
+
+@keyframes move {
+  0%{transform: translateY(-100%); filter: blur(10px);}
+  100%{transform: translateY(0%); filter: blur(0px);}
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1e40af;
+  font-family: "IBM Plex Sans Thai", serif;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.search input {
+  flex: 1;
+  border: 2px solid #1e40af;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1.2em;
+  outline: none;
+}
+
+.search button {
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgb(59, 155, 224);
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.search button:hover {
+  background-color: rgb(76, 175, 246);
+  transform: scale(1.05);
+}
+
+@keyframes scoll{
+  0%{transform: perspective(1000px) rotateX(30deg) translateY(50%) rotateX(20deg); opacity: 0;}
+  100%{transform: perspective(1000px) rotateY(0deg);}
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  animation: scoll 4s ease-in-out;
+}
+
+
+.card-content {
+  background-color: white;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.card-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-style  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 10px auto;
+  gap: 10px;
+  transition: transform 0.5s;
+}
+.card-style:hover {
+  transform: perspective(1000px) rotateY(10deg);
+}
+
+.card-style-content {
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 1);
+  font-family: "IBM Plex Sans Thai", serif;
+  font-size: 17px;
+  background-color: #489fd1;
+  color: white;
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.card-style-content:hover {
+  z-index: 1;
+  background-color: #4897c5;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-style strong {
+  font-size: 25px;
+  font-family: "IBM Plex Sans Thai", serif;
+}
+.date{
+  background-image: url(https://cdn.pixabay.com/photo/2021/10/27/13/15/digital-graphicscat-6747298_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(126, 126, 126, 0.5);
+  background-blend-mode: overlay;
+}
+.date:hover{
+  background-color: rgba(51, 51, 51, 0.5);
+  background-blend-mode: overlay;
+}
+.type{
+  background-image: url(https://cdn.pixabay.com/photo/2022/09/21/14/58/dubai-7470550_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(126, 126, 126, 0.5);
+  background-blend-mode: overlay;
+}
+.type:hover{
+  background-color: rgba(51, 51, 51, 0.5);
+  background-blend-mode: overlay;
+}
+.amount{
+  background-image: url(https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(126, 126, 126, 0.5);
+  background-blend-mode: overlay;
+}
+.amount:hover{
+  background-color: rgba(51, 51, 51, 0.5);
+  background-blend-mode: overlay;
+}
+.category {
+  background-image: url(https://cdn.pixabay.com/photo/2022/04/02/12/59/cartoon-7106965_640.png);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(126, 126, 126, 0.5);
+  background-blend-mode: overlay;
+}
+.category:hover {
+  background-color: rgba(51, 51, 51, 0.5);
+  background-blend-mode: overlay;
+}
+.des {
+  background-image: url(https://cdn.pixabay.com/photo/2022/09/08/18/21/tiktok-7441643_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(126, 126, 126, 0.5);
+  background-blend-mode: overlay;
+}
+.des:hover {
+  background-color: rgba(51, 51, 51, 0.5);
+  background-blend-mode: overlay;
+}
+
+@media (max-width: 1000px) {
+  .card-style {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-style-content {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search input {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search input {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+
+  .card-style-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
