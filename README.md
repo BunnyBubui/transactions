@@ -1,21 +1,75 @@
-# Transaction List
+<p align="center">
+  <img src="docs/assets/readme-banner.svg" alt="Transaction List" width="100%" />
+</p>
 
-Loads a JSON transaction list and filters by date; this is a frontend demonstration.
+<h1 align="center">Transaction List</h1>
 
-## Technology
+<p align="center">Loads a JSON transaction list and filters by date; this is a frontend demonstration</p>
 
-React, JavaScript, Vite.
+<p align="center">
+  <img alt="Prototype" src="https://img.shields.io/badge/Prototype-0e7490?style=flat-square" /> <img alt="React" src="https://img.shields.io/badge/React-0e7490?style=flat-square" /> <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-0e7490?style=flat-square" /> <img alt="Vite" src="https://img.shields.io/badge/Vite-0e7490?style=flat-square" />
+</p>
 
-## Portfolio status
+<p align="center"><a href="#overview">ภาพรวม</a> · <a href="#features">ความสามารถ</a> · <a href="#start">เริ่มใช้งาน</a> · <a href="#structure">โครงสร้าง</a> · <a href="#validation">ตรวจสอบงาน</a></p>
 
-Classification: **supporting**. This description reflects the checked-in implementation. It does not assert production usage, ownership of every team contribution, measured performance or a passing test run.
+<a id="overview"></a>
 
-For a resume, describe only your own contributions and include a screenshot or a reproducible demo. No customer, student, payment or credential data is required to review this code.
+## ภาพรวม
 
-## Local configuration
+หน้าแสดงรายการธุรกรรมจากไฟล์ JSON พร้อมตัวกรองวันที่ ใช้ React state และ effect จัดการข้อมูลและการแสดงผล โดยข้อมูลตัวอย่างเป็นข้อมูลสมมติ
 
-Copy any `*.env.example` files to the corresponding local environment paths and fill in your own values. Never commit these filled files. A removed credential must also be revoked at its provider; deleting a file does not remove it from Git history.
+<a id="features"></a>
 
-## Review and attribution
+## ความสามารถที่มีใน source
 
-Team work and third-party assets retain their original authorship and licensing. Check the implementation and existing package scripts for available commands. Scaffolds and deployment-only copies are not complete application showcases.
+| ส่วนงาน | รายละเอียด | อ้างอิง |
+|---|---|---|
+| **JSON data** | โหลดรายการตัวอย่างจาก public folder | [ดู source](public/db.json) |
+| **Date filter** | กรองรายการตามวันที่ที่เลือก | [ดู source](src/App.jsx) |
+
+<a id="start"></a>
+
+## เริ่มต้นใช้งาน
+
+**สิ่งที่ต้องมี:** Node.js และ npm
+
+```sh
+npm ci
+npm run dev
+```
+
+คำสั่งนี้เปิดส่วนที่มี package.json ของตนเอง; ดู scripts ใน package สำหรับ build และ lint ที่มีอยู่
+
+<a id="structure"></a>
+
+## โครงสร้างที่ควรเริ่มอ่าน
+
+| ตำแหน่ง | หน้าที่ |
+|---|---|
+| [src/](src) | source ของแอป |
+
+<a id="validation"></a>
+
+## คำสั่งและผลตรวจ
+
+| โฟลเดอร์ที่รัน | คำสั่งที่มีใน package |
+|---|---|
+| `.` | `npm run build` |
+| `.` | `npm run lint` |
+
+<a id="scope"></a>
+
+## ขอบเขตของงาน
+
+เป็นการอ่าน JSON ใน frontend ไม่มี backend สำหรับบันทึกธุรกรรมใหม่
+
+<a id="reading"></a>
+
+## อ่านต่อ
+
+- [บันทึกการเตรียม source](docs/CLEANUP.md)
+
+
+---
+
+<p align="center"><a href="https://github.com/BunnyBubui">BunnyBubui</a> · <a href="https://github.com/BunnyBubui/test">Software Portfolio</a></p>
